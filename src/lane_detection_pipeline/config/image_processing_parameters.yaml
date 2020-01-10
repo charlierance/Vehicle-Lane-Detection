@@ -1,0 +1,8 @@
+hls_thresholds:
+  s_threshold: [170, 255]
+gradient_params:
+  sobel_kernel: 15
+  gradient_binary_thresh: [30, 100]
+  magnitude_binary_thresh: [70, 100]
+  direction_binary_thresh: [0.7, 1.3]
+  s_channel_thresh: [150, 255]

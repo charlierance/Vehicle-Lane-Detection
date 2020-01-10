@@ -1,0 +1,7 @@
+sliding_windows:
+  nwindows: 9
+  margin: 100
+  min_pix: 50
+radius_of_curvature:
+  ym_per_pix: 0.041666666666666664
+  xm_per_pix: 0.005285714285714286
