@@ -6,4 +6,4 @@ src/lane_detection_pipeline/plan.txt
 
 ./writeup_template.md
 
-venv/
+venv/*

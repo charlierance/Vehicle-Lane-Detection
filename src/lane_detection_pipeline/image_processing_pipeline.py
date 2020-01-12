@@ -1,13 +1,13 @@
-import numpy as np
 import glob
+
 import cv2
 
-from src.lane_detection_pipeline.utils import GeneralUtils
+import numpy as np
 from src.lane_detection_pipeline.calibratecamera import CalibrateCamera
+from src.lane_detection_pipeline.utils import GeneralUtils
 
 
 class ImageProcessingPipeline:
-
     def __init__(self, calibration_parameters, image_processing_params):
         self.calibration_parameters = calibration_parameters
         self.image_processing_params = image_processing_params
@@ -21,23 +21,29 @@ class ImageProcessingPipeline:
                  matrix and distortion coefficients to return an undistorted image.
         """
         # Read params
-        camera_matrix = np.asarray(self.calibration_parameters["calibration_values"]["camera_matrix"])
+        camera_matrix = np.asarray(
+            self.calibration_parameters["calibration_values"]["camera_matrix"]
+        )
         distortion_coefficient = np.asarray(
             self.calibration_parameters["calibration_values"]["distortion_coefficients"]
         )
 
         calibrate_camera = CalibrateCamera(bgr_image, self.calibration_parameters)
 
-        dst = calibrate_camera.undistort_image(camera_matrix, distortion_coefficient, save_image=False)
+        dst = calibrate_camera.undistort_image(
+            bgr_image, camera_matrix, distortion_coefficient, save_image=False
+        )
 
         if draw_roi:
 
             pts = np.array(
-                [[211, 670],        # Bottom left
-                [610, 435],        # Top left
-                [670, 435],        # Top right
-                [1090, 670]        # Bottom right
-            ])
+                [
+                    [211, 670],  # Bottom left
+                    [610, 435],  # Top left
+                    [670, 435],  # Top right
+                    [1090, 670],  # Bottom right
+                ]
+            )
             return cv2.polylines(dst, [pts], 1, (0, 0, 255), thickness=3)
 
         return dst
@@ -55,19 +61,23 @@ class ImageProcessingPipeline:
 
         # Four source coordinates
         src = np.float32(
-            [[205, 719],  # Bottom left
-             [570, 460],  # Top left
-             [745, 460],  # Top right
-             [1145, 719]  # Bottom right
-             ])
+            [
+                [205, 719],  # Bottom left
+                [570, 460],  # Top left
+                [745, 460],  # Top right
+                [1145, 719],  # Bottom right
+            ]
+        )
 
         # Four desired coordinates
-        dst = np.float32([
-            [offset, img_size[1]],
-            [offset, 0],
-            [img_size[0] - offset, 0],
-            [img_size[0] - offset, img_size[1]]
-        ])
+        dst = np.float32(
+            [
+                [offset, img_size[1]],
+                [offset, 0],
+                [img_size[0] - offset, 0],
+                [img_size[0] - offset, img_size[1]],
+            ]
+        )
 
         # Compute the perspective transform matrix M
         M = cv2.getPerspectiveTransform(src, dst)
@@ -76,7 +86,9 @@ class ImageProcessingPipeline:
         Minv = cv2.getPerspectiveTransform(dst, src)
 
         # Finally warm the image using the transform we have computed and linear interpolation
-        warped = cv2.warpPerspective(undistorted_image, M, img_size, flags=cv2.INTER_LINEAR)
+        warped = cv2.warpPerspective(
+            undistorted_image, M, img_size, flags=cv2.INTER_LINEAR
+        )
 
         return warped, Minv
 
@@ -95,7 +107,7 @@ class ImageProcessingPipeline:
 
         return hls_image, l_channel, s_channel
 
-    def abs_sobel_thresh(self, img, orient='x'):
+    def abs_sobel_thresh(self, img, orient="x"):
         """
         :param img: Expects the l_channel from the hls image.
         :param orient: Direction of gradient to search for, either x or y
@@ -119,7 +131,9 @@ class ImageProcessingPipeline:
         scaled_sobel = np.uint8(255 * abs_sobel / np.max(abs_sobel))
 
         # Define thresholds to capture appropriate gradients
-        thresh = self.image_processing_params["gradient_params"]["gradient_binary_thresh"]
+        thresh = self.image_processing_params["gradient_params"][
+            "gradient_binary_thresh"
+        ]
         binary_output = np.zeros_like(scaled_sobel)
         binary_output[(scaled_sobel >= thresh[0]) & (scaled_sobel <= thresh[1])] = 1
 
@@ -144,7 +158,9 @@ class ImageProcessingPipeline:
         gradmag = (gradmag / scale_factor).astype(np.uint8)
 
         # Create a binary image of ones where threshold is met, zeros otherwise
-        mag_thresh = self.image_processing_params["gradient_params"]["magnitude_binary_thresh"]
+        mag_thresh = self.image_processing_params["gradient_params"][
+            "magnitude_binary_thresh"
+        ]
         binary_output = np.zeros_like(gradmag)
         binary_output[(gradmag >= mag_thresh[0]) & (gradmag <= mag_thresh[1])] = 1
 
@@ -165,7 +181,9 @@ class ImageProcessingPipeline:
         # Take the absolute value of the gradient direction,
         # apply a threshold, and create a binary image result
         absgraddir = np.arctan2(np.absolute(sobely), np.absolute(sobelx))
-        thresh = self.image_processing_params["gradient_params"]["direction_binary_thresh"]
+        thresh = self.image_processing_params["gradient_params"][
+            "direction_binary_thresh"
+        ]
         binary_output = np.zeros_like(absgraddir)
         binary_output[(absgraddir >= thresh[0]) & (absgraddir <= thresh[1])] = 1
 
@@ -182,7 +200,10 @@ class ImageProcessingPipeline:
         :return:
         """
         combined = np.zeros_like(direction_binary)
-        combined[((x_gradient == 1) & (y_gradient == 1)) | ((magnitude_binary == 1) & (direction_binary == 1))] = 1
+        combined[
+            ((x_gradient == 1) & (y_gradient == 1))
+            | ((magnitude_binary == 1) & (direction_binary == 1))
+        ] = 1
         return combined
 
     def extract_colour_channel(self, img):
@@ -206,83 +227,116 @@ class ImageProcessingPipeline:
         :return: An overlaid version of the combined image.
         """
         combined_binary = np.zeros_like(gradient_binary)
-        combined_binary[((gradient_binary == 1) | (colour_binary ==1))] = 1
+        combined_binary[((gradient_binary == 1) | (colour_binary == 1))] = 1
         return combined_binary
 
+
 ################################ TEST FUNCTION ##############################################
+
 
 def test_image_pipeline(save_images=True):
     images = glob.glob("../../test_images/*.jpg")
     utils = GeneralUtils()
     calibration_params = utils.read_yaml("./config/calibration_parameters.yaml")
-    image_processing_params = utils.read_yaml("./config/image_processing_parameters.yaml")
+    image_processing_params = utils.read_yaml(
+        "./config/image_processing_parameters.yaml"
+    )
 
     for image in images:
-        process_image = ImageProcessingPipeline(calibration_params, image_processing_params)
+        process_image = ImageProcessingPipeline(
+            calibration_params, image_processing_params
+        )
         dst = process_image.undistorted_image(image, draw_roi=False)
         warped, minv = process_image.perspective_warp(dst)
         hls_image, l_channel, s_channel = process_image.convert_image_to_hls(warped)
-        x_grad = process_image.abs_sobel_thresh(l_channel, orient='x')
-        y_grad = process_image.abs_sobel_thresh(l_channel, orient='y')
+        x_grad = process_image.abs_sobel_thresh(l_channel, orient="x")
+        y_grad = process_image.abs_sobel_thresh(l_channel, orient="y")
         mag_grad = process_image.mag_thresh(l_channel)
         dir_grad = process_image.dir_thresh(l_channel)
-        combined_grad = process_image.combine_gradients(x_grad, y_grad, mag_grad, dir_grad)
+        combined_grad = process_image.combine_gradients(
+            x_grad, y_grad, mag_grad, dir_grad
+        )
         extracted_colour = process_image.extract_colour_channel(s_channel)
-        combined_grad_colour = process_image.combine_colour_gradient(combined_grad, extracted_colour)
+        combined_grad_colour = process_image.combine_colour_gradient(
+            combined_grad, extracted_colour
+        )
 
         if save_images:
             filename = image.split("/")[-1].split(".")[0]
 
             dst_filename = filename + "_undistorted.jpg"
-            cv2.imwrite(f'../../output_images/image_processing/undistorted/{dst_filename}', dst)
+            cv2.imwrite(
+                f"../../output_images/image_processing/undistorted/{dst_filename}", dst
+            )
 
             roi_filename = filename + "_roi.jpg"
             roi = process_image.undistorted_image(image, draw_roi=True)
-            cv2.imwrite(f'../../output_images/image_processing/roi/{roi_filename}', roi)
+            cv2.imwrite(f"../../output_images/image_processing/roi/{roi_filename}", roi)
 
-            warped_filename = filename + "_warped_roi.jpg"
-            warped_roi = process_image.perspective_warp(roi)
-            cv2.imwrite(f'../../output_images/image_processing/warped_roi/{warped_filename}', warped_roi)
+            # warped_filename = filename + "_warped_roi.jpg"
+            # warped_roi = process_image.perspective_warp(roi)
+            # cv2.imwrite(f'../../output_images/image_processing/warped_roi/{warped_filename}', warped_roi)
 
             hls_filename = filename + "_hls.jpg"
-            cv2.imwrite(f'../../output_images/image_processing/hls/{hls_filename}', hls_image)
+            cv2.imwrite(
+                f"../../output_images/image_processing/hls/{hls_filename}", hls_image
+            )
 
             x_filename = filename + "_x_grad.jpg"
-            x_grad = x_grad*255
-            x_grad = x_grad.astype('uint8')
-            cv2.imwrite(f'../../output_images/image_processing/gradients/x/{x_filename}', x_grad)
+            x_grad = x_grad * 255
+            x_grad = x_grad.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/gradients/x/{x_filename}", x_grad
+            )
 
             y_filename = filename + "_y_grad.jpg"
-            y_grad = y_grad*255
-            y_grad = y_grad.astype('uint8')
-            cv2.imwrite(f'../../output_images/image_processing/gradients/y/{y_filename}', y_grad)
+            y_grad = y_grad * 255
+            y_grad = y_grad.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/gradients/y/{y_filename}", y_grad
+            )
 
             mag_filename = filename + "_mag_grad.jpg"
-            mag_grad = mag_grad*255
-            mag_grad = mag_grad.astype('uint8')
-            cv2.imwrite(f'../../output_images/image_processing/gradients/magnitude/{mag_filename}', mag_grad)
+            mag_grad = mag_grad * 255
+            mag_grad = mag_grad.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/gradients/magnitude/{mag_filename}",
+                mag_grad,
+            )
 
             dir_filename = filename + "_direction_grad.jpg"
-            dir_grad = dir_grad*255
-            dir_grad = dir_grad.astype('uint8')
-            cv2.imwrite(f'../../output_images/image_processing/gradients/direction/{dir_filename}', dir_grad)
+            dir_grad = dir_grad * 255
+            dir_grad = dir_grad.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/gradients/direction/{dir_filename}",
+                dir_grad,
+            )
 
             comb_filename = filename + "_combined_grad.jpg"
-            combined_grad = combined_grad*255
-            combined_grad = combined_grad.astype('uint8')
-            cv2.imwrite(f'../../output_images/image_processing/gradients/combined/{comb_filename}', combined_grad)
+            combined_grad = combined_grad * 255
+            combined_grad = combined_grad.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/gradients/combined/{comb_filename}",
+                combined_grad,
+            )
 
             col_filename = filename + "_colour_extracted.jpg"
-            cv2.imwrite(f'../../output_images/image_processing/colour_extracted/{col_filename}', extracted_colour)
+            extracted_colour = extracted_colour * 255
+            extracted_colour = extracted_colour.astype("uint8")
+            cv2.imwrite(
+                f"../../output_images/image_processing/colour_extracted/{col_filename}",
+                extracted_colour,
+            )
 
             final_filename = filename + "_colour_gradient_binary.jpg"
+            combined_grad_colour = combined_grad_colour * 255
+            combined_grad_colour = combined_grad_colour.astype("uint8")
             cv2.imwrite(
-                f'../../output_images/image_processing/colour_gradient_binary/{final_filename}', combined_grad_colour
+                f"../../output_images/image_processing/colour_gradient_binary/{final_filename}",
+                combined_grad_colour,
             )
 
         cv2.imshow(" ", combined_grad_colour)
         cv2.waitKey(0)
 
     cv2.destroyAllWindows()
-
-
