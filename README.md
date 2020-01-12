@@ -1,10 +1,10 @@
-#Advanced Lane Finding Project
+# Advanced Lane Finding Project
 
-##Example Lane Detection Output:
+## Example Lane Detection Output:
 
 [![LANE DETECTION PIPELINE](https://img.youtube.com/vi/dtK_U_wv6WY/0.jpg)](https://www.youtube.com/watch?v=dtK_U_wv6WY)
 
-##Goals
+## Goals
 
 * Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
 * Apply a distortion correction to raw images.
@@ -15,11 +15,11 @@
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-##Theory of Operation
+## Theory of Operation
 
 The below outlines a description of the system operation in systematic order:
 
-###Calibration
+### Calibration
 
 Code: [Click Here](./src/lane_detection_pipeline/calibratecamera.py)
 
@@ -60,7 +60,7 @@ An example output:
 NOTE: The camera matrix and distortion coefficients can now be saved and applied to all of our images and videos using
 this specific camera.
 
-###Image Processing
+### Image Processing
 
 Code: [Click Here](./src/lane_detection_pipeline/image_processing_pipeline.py)
 
@@ -142,7 +142,7 @@ is good for seeing the yellow lines and threshold the yellow to extract it from 
 
 ![alt text](./output_images/image_processing/colour_gradient_binary/straight_lines1_colour_gradient_binary.jpg "Warped ROI")
 
-###Drawing the Lane Line
+### Drawing the Lane Line
 
 Code: [Click Here](./src/lane_detection_pipeline/image_processing_pipeline.py)
 
@@ -186,7 +186,7 @@ matrix and then plugging this back into our warp function.
 
 ![alt text](./output_images/final_product/straight_lines1_final_product.jpg "Final Product")
 
-###Radius of Curvature and Ego Pose
+### Radius of Curvature and Ego Pose
 
 Code (L262-L303): [Click Here](./src/lane_detection_pipeline/image_processing_pipeline.py)
 

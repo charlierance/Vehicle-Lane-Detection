@@ -5,90 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/.ipynb_checkpoints/example-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/binary_combo_example.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/color_fit_lines.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/example_output.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/undistort_output.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/warped_straight_lines.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/straight_lines1_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/straight_lines1_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/straight_lines2_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/straight_lines2_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test1_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test1_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test2_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test2_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test3_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test3_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test4_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test4_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test5_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test5_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test6_colour_extracted.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_extracted/test6_colour_extracted.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/straight_lines1_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/straight_lines1_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/straight_lines2_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/straight_lines2_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test1_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test1_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test2_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test2_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test3_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test3_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test4_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test4_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test5_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test5_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test6_colour_gradient_binary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/colour_gradient_binary/test6_colour_gradient_binary.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/straight_lines1_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/straight_lines1_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/straight_lines2_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/straight_lines2_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test1_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test1_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test2_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test2_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test3_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test3_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test4_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test4_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test5_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test5_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test6_combined_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/combined/test6_combined_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/straight_lines1_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/straight_lines1_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/straight_lines2_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/straight_lines2_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test1_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test1_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test2_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test2_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test3_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test3_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test4_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test4_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test5_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test5_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test6_direction_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/direction/test6_direction_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/straight_lines1_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/straight_lines1_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/straight_lines2_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/straight_lines2_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test1_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test1_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test2_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test2_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test3_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test3_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test4_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test4_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test5_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test5_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test6_mag_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/magnitude/test6_mag_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/straight_lines1_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/straight_lines1_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/straight_lines2_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/straight_lines2_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test1_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test1_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test2_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test2_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test3_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test3_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test4_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test4_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test5_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test5_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test6_x_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/x/test6_x_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/straight_lines1_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/straight_lines1_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/straight_lines2_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/straight_lines2_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test1_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test1_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test2_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test2_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test3_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test3_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test4_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test4_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test5_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test5_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test6_y_grad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/gradients/y/test6_y_grad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/straight_lines1_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/straight_lines1_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/straight_lines2_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/straight_lines2_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test1_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test1_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test2_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test2_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test3_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test3_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test4_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test4_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test5_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test5_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/hls/test6_hls.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/hls/test6_hls.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/straight_lines1_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/straight_lines1_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/straight_lines2_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/straight_lines2_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test1_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test1_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test2_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test2_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test3_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test3_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test4_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test4_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test5_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test5_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_images/image_processing/roi/test6_roi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output_images/image_processing/roi/test6_roi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lane_detection_pipeline/calibratecamera.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lane_detection_pipeline/calibratecamera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lane_detection_pipeline/run_full_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lane_detection_pipeline/run_full_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeup_template.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,11 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/lane_detection_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1973">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1487">
+              <caret line="195" selection-start-line="195" selection-end-line="195" />
             </state>
           </provider>
         </entry>
@@ -113,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1901">
-              <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="42" />
+            <state relative-caret-position="-1721">
+              <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -125,17 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/calibratecamera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+            <state relative-caret-position="1710">
+              <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="216">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -143,20 +56,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/run_full_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+            <state relative-caret-position="1699">
+              <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="457">
-                <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <first_editor relative-caret-position="-288">
+                <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -199,15 +121,16 @@
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/imagefilter.py" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/config/calibration_parameters.yaml" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/config/image_processing_parameters.yaml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/config/lane_detection_parameters.yaml" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/lane_detection_pipeline.py" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/run_full_pipeline.py" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/calibratecamera.py" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py" />
         <option value="$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.pre-commit-config.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -229,34 +152,6 @@
             <path>
               <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
               <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-              <item name="output_images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-              <item name="output_images" type="462c0819:PsiDirectoryNode" />
-              <item name="final_product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-              <item name="output_images" type="462c0819:PsiDirectoryNode" />
-              <item name="lane_detection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lane_detection_node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lane_detection_node" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lane_detection_pipeline" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -576,12 +471,12 @@
       <workItem from="1578663313788" duration="12473000" />
       <workItem from="1578676515097" duration="3496000" />
       <workItem from="1578746696800" duration="10936000" />
-      <workItem from="1578822565156" duration="2606000" />
+      <workItem from="1578822565156" duration="3565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109222000" />
+    <option name="totallyTimeSpent" value="110181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -601,8 +496,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.13251784" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37104994" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.13251784" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -647,9 +542,6 @@
     <SUITE FILE_PATH="coverage/CarND_Advanced_Lane_Lines$calibratecamera.coverage" NAME="calibratecamera Coverage Results" MODIFIED="1578328126216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/lane_detection_pipeline" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_images/test2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/output_images/lane_detection/previous_polynomial_coefficients/test2_previous_search.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -764,15 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/calibratecamera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="1710">
+          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -791,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/image_processing_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1901">
-          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="42" />
+        <state relative-caret-position="-1721">
+          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -801,28 +686,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/run_full_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+        <state relative-caret-position="1699">
+          <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lane_detection_pipeline/lane_detection_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1973">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1487">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="457">
-            <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <first_editor relative-caret-position="-288">
+            <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>

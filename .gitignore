@@ -7,3 +7,7 @@ src/lane_detection_pipeline/plan.txt
 ./writeup_template.md
 
 venv/*
+
+.idea
+
+venv/lib/python3.7/site-packages/cv2/
