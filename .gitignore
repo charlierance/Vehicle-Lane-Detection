@@ -8,6 +8,6 @@ src/lane_detection_pipeline/plan.txt
 
 venv/*
 
-.idea
+.idea/
 
 venv/lib/python3.7/site-packages/cv2/
